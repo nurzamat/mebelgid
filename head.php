@@ -260,14 +260,6 @@ $id_service = mysql_fetch_object($q5)->ID;
             <h1 class="logo"><a href="index.php" title="MebelGid" class="logo"><img src="images/logo.png" alt="MebelGid" /></a></h1>
         </div>
 
-        <div class="contact-block">
-            <div class="promo-info">
-                <a href="addNew.php"><img src="images/sell.png" alt="Sell" /></a></div>
-            <div class="phone-block"><strong class="title">0312 667788</strong>
-                <div class="title">0552124565</div>
-            </div>
-        </div>
-        <p>&nbsp;</p>
         <div class="form-search">
             <?if($current_page == "salons"){?>
             <form id="search_mini_form_desktop" class="search-holder" action="salons.php" method="get">
@@ -278,7 +270,19 @@ $id_service = mysql_fetch_object($q5)->ID;
                 <input id="search_desktop" type="text" name="q" placeholder="Поиск" class="input-text" maxlength="128"/>
                 <input value="Go" type="submit"/>
             </form>
+            <div class="enter-like">
+                <a href="#"><img src="images/usericon.png" />Войти</a>
+                <a href="#">Нравится (0)</a>
+            </div>
         </div>
+
+
+        <div class="contact-block">
+            <div class="promo-info">
+                <a href="addNew.php"><img src="images/promo.png" alt="Sell" /></a>
+            </div>
+        </div>
+
         <div id="search_autocomplete_desktop" class="search-autocomplete" style="display:none;"></div>
         <script type="text/javascript">
             //<![CDATA[

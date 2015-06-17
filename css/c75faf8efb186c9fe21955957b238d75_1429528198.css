@@ -2481,20 +2481,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	font-size:13px;
 	line-height:16px;
 }
-.promo-info{
-	border-right:1px solid #e1dfd9;
-	float:left;
-	width:206px;
-	padding:2px 8px 1px 0;
-}
-.promo-info .title{
-	display:block;
-	margin:0 0 -1px;
-	font-weight:normal;
-	text-transform:uppercase;
-	letter-spacing:0.6px;
-	font-family:"Proximanova Regular", Arial, Helvetica, sans-serif;
-}
+
 .subscribe-link{font-family:"Proximanova Bold", Arial, Helvetica, sans-serif;}
 .subscribe-link a{
 	display:inline-block;
@@ -2578,31 +2565,41 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	margin:0;
 	padding:0;
 }
-.form-search{
-	position:absolute;
-	left:-9999px;
-	overflow:hidden;
-}
 .search-holder{
 	position:relative;
 	overflow:hidden;
-	border:1px solid #e1dfd9;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
 	background:#fff;
 	padding:0 36px 0 0;
-}
-.header-holder .form-search{
-	position:relative;
-	left:0;
+	width: 250px;
 }
 .search-holder.parent-active{border-color:#b3b0a1;}
+
+.branding {
+	width: 25%;
+	float: left;
+}
+.form-search {
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.form-search #search_desktop {
+	background: #f2e8de;
+	border-bottom: 2px solid #e7a485;
+}
+
+.contact-block {
+	width: 25%;
+	text-align: right;
+	padding: 0;
+}
 .form-search input[type="text"]{
 	border:0;
 	height:38px;
 	padding:10px 9px;
 	letter-spacing:0.3px;
+	border-radius: 0 !important;
 }
 .form-search input[type="submit"]{
 	position:absolute;
@@ -2614,16 +2611,15 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	margin:0;
 	padding:0;
 	border:0;
-	background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-global.png) no-repeat 0 -139px;
+	background: #f2e8de url(../images/searchicon.png) no-repeat center;
+	background-size: 17px;
 	width:36px;
 	height:38px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border-radius:4px;
+	border-right: 2px solid #e7a485;
+	border-bottom: 2px solid #e7a485;
+
 }
-.search-holder.parent-active input[type="submit"]{background-position:0 -215px;}
 .form-search input[type="submit"]:hover{
-	background-position:0 -177px;
 	cursor:pointer;
 }
 .search-autocomplete{z-index:999;}
