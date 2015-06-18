@@ -269,7 +269,7 @@ ol{list-style:none;}
 .main-container {}
 .main{
 	margin:0 auto;
-	max-width:1050px;
+	max-width: 995px;
 }
 .cms-home .std{display:none;}
 .main .main-back{
@@ -1244,20 +1244,30 @@ p.required{
 .title-buttons h6{}
 .subtitle,
 .sub-title{clear:both;}
+
 .sub-title{
 	text-align:center;
 	margin:0 0 34px;
-	font:30px/40px "Proximanova Light", Arial, Helvetica, sans-serif;
+	font: bold 22px/39px Tahoma, Arial;
 }
 .sub-title a{
 	display:inline-block;
 	vertical-align:top;
-	padding:0 114px;
 	text-transform:uppercase;
     color:#ffa374;
 	position:relative;
 	letter-spacing:0.7px;
 }
+.sub-title.hotsalons a {
+	padding:0 172px;
+}
+.sub-title.sale a {
+	padding:0 242px;
+}
+.sub-title.design a {
+	padding:0 364px;
+}
+
 .sub-title a:hover{
     color:#A5886E;
 	text-decoration:none;
@@ -1265,17 +1275,26 @@ p.required{
 .sub-title a:after,
 .sub-title a:before{
 	content:'';
-	width:100px;
+	width: 150px;
 	height:1px;
-	background:#A5886E;
+	background:#d66345;
 	position:absolute;
 	top:20px;
 	margin:-1px 0 0;
 }
+
+.sub-title.sale a:after,
+.sub-title.sale a:before{
+	width: 220px;
+}
+
+.sub-title.design a:after,
+.sub-title.design a:before{
+	width: 340px;
+}
+
 .sub-title a:after{right:0;}
 .sub-title a:before{left:0;}
-.sub-title a:hover:after,
-.sub-title a:hover:before{background:#ffa374;}
 .doyoumean{
 	text-align:center;
 	padding:0 0 20px;

@@ -387,7 +387,7 @@ while ($news = mysql_fetch_object($newsQ))
         </script>
         <div class="main col1-layout">
             <div class="col-main">
-                <h2 class="sub-title"><a href="#">Горячие предложения от салонов и частников</a></h2>
+                <h2 class="sub-title hotsalons"><a href="#">Горячие предложения от салонов и частников</a></h2>
                 <div class="category-products">
                     <ul class="products-grid col4grid">
                         <? while($adv = mysql_fetch_object($hotSalons)) {
@@ -426,7 +426,7 @@ while ($news = mysql_fetch_object($newsQ))
                         <? } ?>
                     </ul>
                 </div>
-                <h2 class="sub-title"><a href="news.php">Распродажа мебели, скидки и акции</a></h2>
+                <h2 class="sub-title sale"><a href="news.php">Распродажа мебели, скидки и акции</a></h2>
                 <div class="recent-posts">
                     <ul class="posts-list" id="wp-81e">
                         <?if($obj1 != null) {?>
@@ -543,7 +543,7 @@ while ($news = mysql_fetch_object($newsQ))
                     //]]>
                 </script>
                 <div class="recent-posts">
-                    <h2 class="sub-title"><a href="#">Дизайн интерьеров</a></h2>
+                    <h2 class="sub-title design"><a href="#">Дизайн интерьеров</a></h2>
                     <ul class="posts-list" id="wp-81e">
                         <li>
                             <a class="image-block" href="#" title="Small Space Living Tips"><img src="images/Get-Studious-330x204.jpg" alt="Small Space Living Tips"/></a>
