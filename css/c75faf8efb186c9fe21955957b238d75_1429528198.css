@@ -1254,7 +1254,7 @@ p.required{
 	display:inline-block;
 	vertical-align:top;
 	text-transform:uppercase;
-    color:#ffa374;
+    color:#d66345;
 	position:relative;
 	letter-spacing:0.7px;
 }
@@ -2872,6 +2872,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	border-collapse:collapse;
 	display:table;
 	width:100%;
+	padding-bottom: 18px;
 }
 #nav > li{
 	display:table-cell;
@@ -4365,8 +4366,15 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	line-height:0;
 	letter-spacing:-4px;
 }
-.category-products{padding:0 0 30px;}
+.category-products{
+	padding:0 0 45px;
+	border-bottom: 1px dashed #beab9a;
+	margin-bottom: 20px;
+}
 
+.category-products.last {
+	border: none;
+}
 .products-grid .item{
 	display:inline-block;
 	vertical-align:top;
@@ -4380,14 +4388,21 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	box-sizing:border-box;
 }
 
+.category-products {
+	overflow: hidden;
+}
+
 .products-grid .item:nth-child(4n) {
 	width: 66.66%;
 }
-.sale .products-grid .item:nth-child(5n) {
+.sale-slider .products-grid .item:nth-child(5n) {
 	width: 66.66%;
 }
-.sale .products-grid .item:nth-child(4n) {
+.sale-slider .products-grid .item:nth-child(4n) {
 	width: 33.33%;
+}
+.sale-slider .products-grid {
+	width: 1025px !important;
 }
 .products-grid .store-label{
 	display:block;
@@ -4421,7 +4436,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 .products-grid .product-image img{
 	width:100%;
-	height: 200px;
+	height: auto;
 	background-size:cover !important;
 }
 .products-grid .sale-label{
@@ -11668,4 +11683,23 @@ div.solrbridge-overlay div {
 	font: bold 14px/25px Open Sans, Arial;
 }
 
-	
+/* bxslider override */
+.bx-wrapper {
+	margin-bottom: 0;
+}
+.bx-wrapper .bx-viewport {
+	border: none;
+	box-shadow: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #db7858;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #eab195;
+}
+
+.bx-wrapper .bx-viewport {
+	left: 0;
+}

@@ -122,12 +122,35 @@ while ($news = mysql_fetch_object($newsQ))
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
     <link rel="stylesheet" type="text/css" href="css/bee28be882eea735de94a061a6bf1b28_1429528089.css" />
     <link rel="stylesheet" type="text/css" href="css/c75faf8efb186c9fe21955957b238d75_1429528198.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/54b530786bfaad6f6b0b47127b3eb8bf_1429528194.css" media="print" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/7306e16e41b7ffe6ec31f4c9d92f7b02_1429528198.js"></script>
+    <script type="text/javascript" src="js/assets/jquery.bxslider.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="canonical" href="http://www.mebelgid.kg/" />
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.bottom-slider').bxSlider({
+                slideWidth: 345,
+                minSlides: 2,
+                maxSlides: 3,
+                slideMargin: 0
+            });
+
+            jQuery('.sale-slider').bxSlider({
+                slideWidth: 1025,
+                slideMargin: 0
+            });
+
+            jQuery('.salons-slider').bxSlider({
+                slideWidth: 1025,
+                slideMargin: 0
+            });
+        });
+    </script>
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="css/02575c53fc10f8807d8b5cb009e8b505_1429528194.css" media="all" />
     <![endif]-->
@@ -390,240 +413,504 @@ while ($news = mysql_fetch_object($newsQ))
             <div class="col-main">
                 <h2 class="sub-title hotsalons"><a href="#">Горячие предложения от салонов и частников</a></h2>
                 <div class="category-products">
-                    <ul class="products-grid">
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
-                                <img data-src="" class="" src="images/prod1.png" alt="Гарнитура ВуМе">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 5000 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
-                                <img data-src="" class="" src="images/prod6.png" alt="Гарнитура 8">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 5000 сом</span></span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
-                                <img data-src="" class="" src="images/prod7.png" alt="Офисные стулья от салона">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 7888888 сом</span></span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
-                                <img data-src="" class="" src="images/prod8.png" alt="Гарнитура ВуМе2">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 90000 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
+                    <div class="salons-slider">
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod1.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod6.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod7.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod8.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
 
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
-                                <img data-src="" class="" src="images/prod9.png" alt="Офисные стулья от салона">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 7888888 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                    </ul>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod9.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod1.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod6.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod7.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod8.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod9.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod1.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod6.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod7.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod8.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod9.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <h2 class="sub-title sale"><a href="news.php">Распродажа мебели, скидки и акции</a></h2>
-                <div class="category-products sale">
-                    <ul class="products-grid">
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
-                                <img data-src="" class="" src="images/prod10.png" alt="Гарнитура ВуМе">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 5000 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
-                                <img data-src="" class="" src="images/prod2.png" alt="Гарнитура 8">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 5000 сом</span></span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
-                                <img data-src="" class="" src="images/prod3.png" alt="Офисные стулья от салона">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 7888888 сом</span></span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
-                                <img data-src="" class="" src="images/prod4.png" alt="Гарнитура ВуМе2">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 90000 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-
-                        <li class="item">
-                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
-                                <img data-src="" class="" src="images/prod5.png" alt="Офисные стулья от салона">
-                                <span class="loading hidden"></span>
-                                <span class="sale-label hidden" title="Sale">Sale</span>
-                            </a>
-                            <div class="price-box">
-                                <span class="regular-price" id="product-price">
-                                    <span class="price">от 7888888 сом</span>
-                                </span>
-                            </div>
-                            <h2 class="product-name">
-                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
-                                <span>nurik salon</span>
-                            </h2>
-                        </li>
-                    </ul>
-                </div>
-                <script type="text/javascript">
-                    //<![CDATA[
-                    var loadedImages = new Array();
-                    var imagesCnt = 3;
-                    jQuery('#promo-gallery').css('visibility', 'visible');
-                    jQuery(document).ready(function() {
-                        jQuery('#promo-gallery').find('.iosSliderPromo').iosSlider({
-                            snapToChildren: true,
-                            desktopClickDrag: true,
-                            startAtSlide: 0,
-                            navPrevSelector: '#promo-gallery .btn-prev',
-                            navNextSelector: '#promo-gallery .btn-next',
-                            onSlideComplete: slideCompletePromo,
-                            onSliderLoaded: sliderLoadedPromo,
-                            onSlideChange: slideChangePromo
-                        });
-                    });
-                    function slidePrevNextPromo(args){
-//            console.log(args);
-//			sliderWidth = jQuery('#promo-gallery .slide-holder').width();
-//			slideWidth = jQuery(args.currentSlideObject).width();
-//			itemOnDesk = Math.ceil(sliderWidth / slideWidth);
-//
-//		    if(args.currentSlideNumber == args.data.numberOfSlides) {
-//		        jQuery('#promo-gallery .btn-next').addClass('disable');
-//		        jQuery('#promo-gallery .btn-prev').removeClass('disable');
-//		    } else if(itemOnDesk > 1 && jQuery(args.currentSlideObject).nextAll('.slide').length < itemOnDesk) {
-//		        jQuery('#promo-gallery .btn-next').addClass('disable');
-//		        jQuery('#promo-gallery .btn-prev').removeClass('disable');
-//		    } else if(args.currentSlideNumber == 1) {
-//		        jQuery('#promo-gallery .btn-prev').addClass('disable');
-//		        jQuery('#promo-gallery .btn-next').removeClass('disable');
-//		    } else {
-//		        jQuery('#promo-gallery .btn-next').removeClass('disable');
-//		        jQuery('#promo-gallery .btn-prev').removeClass('disable');
-//		    }
-                    }
-
-                    function slideChangePromo(args) {
-                        jQuery('#promo-gallery .switcher .item').removeClass('active');
-                        jQuery('#promo-gallery .switcher .item:eq(' + (args.currentSlideNumber - 1) + ')').addClass('active');
-                        jQuery(args.currentSlideObject).siblings('.slide').removeClass('active');
-                        jQuery(args.currentSlideObject).addClass('active');
-
-                        slidePrevNextPromo(args);
-                    }
-                    function slideCompletePromo(args) {
-                        if(!args.slideChanged) return false;
-                        jQuery(args.currentSlideObject).siblings('.slide').removeClass('active');
-                        jQuery(args.currentSlideObject).addClass('active');
-                        slidePrevNextPromo(args);
-                    }
-                    function sliderLoadedPromo(args) {
-                        jQuery(args.currentSlideObject).siblings('.slide').removeClass('active');
-                        jQuery(args.currentSlideObject).addClass('active');
-                        slideChangePromo(args);
-                        slidePrevNextPromo(args);
-                    }
-
-                    jQuery(window).resize(function(){
-
-                    });
-                    //]]>
-                </script>
                 <div class="category-products">
+                    <div class="sale-slider">
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod10.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod2.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod3.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod4.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod5.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod10.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod2.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod3.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod4.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod5.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                        <ul class="products-grid">
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                    <img data-src="" class="" src="images/prod10.png" alt="Гарнитура ВуМе">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                    <img data-src="" class="" src="images/prod2.png" alt="Гарнитура 8">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 5000 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod3.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span></span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                    <img data-src="" class="" src="images/prod4.png" alt="Гарнитура ВуМе2">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 90000 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+
+                            <li class="item">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                    <img data-src="" class="" src="images/prod5.png" alt="Офисные стулья от салона">
+                                    <span class="loading hidden"></span>
+                                    <span class="sale-label hidden" title="Sale">Sale</span>
+                                </a>
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price">
+                                        <span class="price">от 7888888 сом</span>
+                                    </span>
+                                </div>
+                                <h2 class="product-name">
+                                    <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                    <span>nurik salon</span>
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category-products design">
                     <h2 class="sub-title design"><a href="#">Дизайн интерьеров</a></h2>
-                    <ul class="products-grid">
+                    <ul class="products-grid bottom-slider">
                         <li class="item">
                             <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
                                 <img data-src="" class="" src="images/allergo.png" alt="Гарнитура ВуМе">
@@ -657,9 +944,75 @@ while ($news = mysql_fetch_object($newsQ))
                                 <span>Джихаз Мебель</span>
                             </h2>
                         </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
+                        </li>
                     </ul>
                 </div>
-                <div class="category-products">
+                <div class="category-products last">
                     <h2 class="sub-title design"><a href="#">Мебельные салоны</a></h2>
                     <div><img src="images/stores.png" /></div>
                     <div class="stores-info">
