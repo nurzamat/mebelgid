@@ -2220,7 +2220,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 
 .header-panel a{
-	font-size: 10px;
+	font-size: 12px;
 }
 .sub-panel{
 	color:#fff;
@@ -2563,7 +2563,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	overflow:hidden;
 }
 .header h1.logo{
-	margin:0;
+	margin:0 0 0 -12px;
 	padding:0;
 }
 .search-holder{
@@ -2571,7 +2571,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	overflow:hidden;
 	background:#fff;
 	padding:0 36px 0 0;
-	width: 300px;
+	width: 277px;
 	float: left;
 }
 .search-holder.parent-active{
@@ -2583,7 +2583,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	margin: 9px 0 0 8px;
 }
 .enter-like a{
-	font-size: 10px;
+	font-size: 12px;
 	vertical-align: middle;
 	text-transform: uppercase;
 	padding: 0 10px;
@@ -2940,7 +2940,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	display:inline-block;
 	vertical-align:top;
 	letter-spacing:0;
-	width:25%;
+	width:20%;
 	padding:0 15px 27px;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -2950,10 +2950,10 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 #nav .drop .category-visual{
 	display:block;
-	color:#A5886E;
+	color:#48433d;
 }
 #nav .drop .category-visual:hover{
-	color:#ffa374;
+	color:#7b6450;
 	text-decoration:none;
 }
 #nav .drop .category-visual.active{color:#ffb387;}
@@ -2971,9 +2971,12 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	position:relative;
 	padding:0 20px 9px 0;
 	margin-bottom:6px;
-	border-bottom:1px solid #b3b0a1;
+	border-bottom:1px solid #db7858;
 	font:14px/20px 'Proximanova Bold', Arial, Helvetica, sans-serif;
 	letter-spacing:-0.3px;
+}
+#nav .drop .title:hover:after{
+	background: url(../images/menuarrow-brown.png) no-repeat;
 }
 #nav .drop .title:after{
 	content:'';
@@ -2982,14 +2985,13 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	top:1px;
 	width:16px;
 	height:16px;
-	background: url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-global.png) no-repeat -70px 0;
+	background: url(../images/menuarrow.png) no-repeat;
 }
 #nav .drop .title a{
 	color:inherit;
 	text-decoration:none;
 }
 #nav .drop .category-visual:hover .title{border-color:#ffa374;}
-#nav .drop .category-visual:hover .title:after{background-position:-146px -94px;}
 #nav .drop .category-visual.active .title{border-bottom-color:#ffb387;}
 #nav .drop .category-visual.active .title:after{background-position:-146px -94px;}
 #nav .drop .menu-list{margin-bottom:30px;}
@@ -3015,10 +3017,17 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	top:6px;
 	width:16px;
 	height:16px;
-	background: url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-global.png) no-repeat -70px 0;
+	background: url(../images/menuarrow.png) no-repeat;
 }
-#nav .drop.special-drop .sub-category-list a:hover:after,
-#nav .drop.special-drop .sub-category-list a.active:after{background-position:-146px -94px;}
+#nav > li:first-child > a {
+	border-radius: 4px 0 0 4px;
+}
+#nav > li:last-child > a {
+	border-radius: 0 4px 4px 0;
+}
+#nav .drop.special-drop .sub-category-list a:hover:after{
+	background: url(../images/menuarrow-brown.png) no-repeat;
+}
 #nav .drop.special-drop .category-image{
 	margin:0;
 	-webkit-border-radius:0 0 4px 4px;
@@ -3050,15 +3059,68 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	border:none;
 }
 
+#nav .house a:before{
+	content: " ";
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/house.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
+#nav .office a:before{
+	content: " ";
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/kreslo.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
+#nav .business a:before{
+	content: " ";
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/business.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
+#nav .interior a:before{
+	content: " ";
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/lamp.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
+#nav .service {
+	width: 8%;
+}
+#nav .service a:before{
+	content: " ";
+	margin-right: 8px;
+	width: 20px;
+	height: 21px;
+	background-image: url(../images/uslugi.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
 /* 3rd+ leven */
 #nav ul ul,
 #nav ul div{top:7px;}
 #nav ul li{}
 #nav ul li.last{border-bottom:0;}
-#nav ul li a{color:#A5886E !important;}
+#nav ul li a{color:#48433d !important;}
 #nav ul li.over > a,
 #nav ul li a:hover{
-	color:#ffb387 !important;
+	color:#7b6450 !important;
 	text-decoration:none;
 }
 #nav ul li a.active{color:#ffb387 !important;}
@@ -3504,10 +3566,15 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	z-index:115;
 	position:relative;
 	margin:0 3px;
-	background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-home.png) no-repeat 0 -148px;
+	background: #fff;
+	border-radius: 20px;
 }
-.slideshow-pager span:hover{background-position:-15px -148px;}
-.slideshow-pager span.cycle-pager-active{background-position:-30px -148px;}
+.slideshow-pager span:hover{
+	background: #BBBCBE;
+}
+.slideshow-pager span.cycle-pager-active{
+	background: #BBBCBE;
+}
 .slideshow-pager > *{cursor:pointer;}
 .slideshow-container .content-button{
 	position:absolute;
@@ -3518,6 +3585,13 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	display:none;
 }
 .slideshow-container:hover .content-button{display:block;}
+
+.slideshow-container .slideshow-prev {
+	background: url(../images/arrow-left.png) no-repeat;
+}
+.slideshow-container .slideshow-next {
+	background: url(../images/arrow-right.png) no-repeat;
+}
 .slideshow-container .slideshow-prev,
 .slideshow-container .slideshow-next{
 	position:absolute;
@@ -3527,18 +3601,16 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	margin:-37px 0 0;
 	z-index:110;
 	text-decoration:none;
-	background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-home.png) no-repeat;
 	cursor:pointer;
 }
-.slideshow-container .slideshow-prev{left:10px;}
+.slideshow-container .slideshow-prev{
+	left:40px;
+}
 .slideshow-container .slideshow-next{
-	right:10px;
-	background-position:0 -74px;
+	right:40px;
 }
 .slideshow-container:hover .slideshow-prev,
 .slideshow-container:hover .slideshow-next{display:block;}
-.slideshow-container .slideshow-prev:hover{background-position:-42px 0;}
-.slideshow-container .slideshow-next:hover{background-position:-42px -74px;}
 
 .home-slideshow{
 	width:auto;

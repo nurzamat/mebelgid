@@ -296,11 +296,11 @@ $id_service = mysql_fetch_object($q5)->ID;
     <div class="nav-container">
         <a class="btn-rug-finder" href="#popup1"><span>Mebel Finder</span></a>
         <ul id="nav">
-            <li  class="level0 nav-1 first level-top parent">
+            <li  class="level0 nav-1 first level-top parent house">
                 <a href="category.php?c=1"  class="level-top"><span >Мебель для дома</span></a>
                 <div class="drop">
                     <div class="category-col">
-                        <a class="category-visual" href="category.php?c=1&cat=kitchen"><span class="image-block"><img src="images/beds-mattresses.jpg" alt="" /></span><strong class="title">Кухня</strong></a>
+                        <a class="category-visual" href="category.php?c=1&cat=kitchen"><span class="image-block"><img src="images/house1.png" alt="" /></span><strong class="title">Кухня</strong></a>
                         <ul class="sub-category-list">
                             <li><a class="" href="category.php?c=1&cat=kitchen&subcat=sets">Гарнитуры</a></li>
                             <li><a class="" href="category.php?c=1&cat=kitchen&subcat=groups">Обеденные группы</a></li>
@@ -312,21 +312,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                         </ul>
                     </div>
                     <div class="category-col">
-                        <a class="category-visual" href="category.php?c=1&cat=living"><span class="image-block"><img src="images/bed-frames.jpg" alt="" /></span><strong class="title">Жилая мебель</strong></a>
-                        <ul class="sub-category-list">
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=walls">Гостиные, витрины</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=halls">Прихожие</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=cupboards">Шкафы, шкафы-купе</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=offices">Домашние кабинеты</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=tables">Столы</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=chairs">Стулья</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=tallboys">Тумбы, комоды, подставки</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=coffee-tables">Журнальные столики</a></li>
-                            <li><a class="" href="category.php?c=1&cat=living&subcat=braided">Плетеная мебель</a></li>
-                        </ul>
-                    </div>
-                    <div class="category-col">
-                        <a class="category-visual" href="category.php?c=1&cat=soft"><span class="image-block"><img src="images/bedroom-furniture_2.jpg" alt="" /></span><strong class="title">Мягкая мебель</strong></a>
+                        <a class="category-visual" href="category.php?c=1&cat=soft"><span class="image-block"><img src="images/house2.png" alt="" /></span><strong class="title">Мягкая мебель</strong></a>
                         <ul class="sub-category-list">
                             <li><a class="" href="category.php?c=1&cat=soft&subcat=sofas">Диваны, диван-кровати</a></li>
                             <li><a class="" href="category.php?c=1&cat=soft&subcat=armchairs">Кресла, кресла-кровати</a></li>
@@ -335,7 +321,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                         </ul>
                     </div>
                     <div class="category-col">
-                        <a class="category-visual" href="category.php?c=1&cat=children"><span class="image-block"><img src="images/bedroom-furniture_2.jpg" alt="" /></span><strong class="title">Детская мебель</strong></a>
+                        <a class="category-visual" href="category.php?c=1&cat=children"><span class="image-block"><img src="images/house3.png" alt="" /></span><strong class="title">Детская мебель</strong></a>
                         <ul class="sub-category-list">
                             <li><a class="" href="category.php?c=1&cat=children&subcat=sets">Гарнитуры</a></li>
                             <li><a class="" href="category.php?c=1&cat=children&subcat=modules">Комбинированные модули</a></li>
@@ -350,7 +336,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                         </ul>
                     </div>
                     <div class="category-col">
-                        <a class="category-visual" href="category.php?c=1&cat=bedrooms"><span class="image-block"><img src="images/bedroom-furniture_2.jpg" alt="" /></span><strong class="title">Спальня</strong></a>
+                        <a class="category-visual" href="category.php?c=1&cat=bedrooms"><span class="image-block"><img src="images/house4.png" alt="" /></span><strong class="title">Спальня</strong></a>
                         <ul class="sub-category-list">
                             <li><a class="" href="category.php?c=1&cat=bedrooms&subcat=beds">Кровати</a></li>
                             <li><a class="" href="category.php?c=1&cat=bedrooms&subcat=sets">Гарнитуры</a></li>
@@ -362,9 +348,23 @@ $id_service = mysql_fetch_object($q5)->ID;
                             <li><a class="" href="category.php?c=1&cat=bedrooms&subcat=shawl">Покрывала</a></li>
                         </ul>
                     </div>
+                    <div class="category-col">
+                        <a class="category-visual" href="category.php?c=1&cat=bedrooms"><span class="image-block"><img src="images/house5.png" alt="" /></span><strong class="title">Ванная и туалет</strong></a>
+                        <ul class="sub-category-list">
+                            <li><a class="" href="#">Смесители</a></li>
+                            <li><a class="" href="#">Раковины</a></li>
+                            <li><a class="" href="#">Ванны</a></li>
+                            <li><a class="" href="#">Унитазы</a></li>
+                            <li><a class="" href="#">Биде</a></li>
+                            <li><a class="" href="#">Писсуары</a></li>
+                            <li><a class="" href="#">Душевые кабины</a></li>
+                            <li><a class="" href="#">Сауны</a></li>
+                            <li><a class="" href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
                 </div>
             </li>
-            <li  class="level0 nav-2 level-top parent">
+            <li  class="level0 nav-2 level-top parent office">
                 <a href="category.php?c=3"  class="level-top"><span >Мебель для офиса</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
@@ -383,7 +383,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                     </div>
                 </div>
             </li>
-            <li  class="level0 nav-3 level-top parent">
+            <li  class="level0 nav-3 level-top parent business">
                 <a href="#"  class="level-top"><span >Профильная для бизнеса</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
@@ -402,7 +402,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                     </div>
                 </div>
             </li>
-            <li  class="level0 nav-4 level-top parent">
+            <li  class="level0 nav-4 level-top parent interior">
                 <a href="category.php?c=2"  class="level-top"><span >Все для интеръера</span></a>
                 <div class="drop">
                     <div class="category-col">
@@ -447,7 +447,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                     </div>
                 </div>
             </li>
-            <li class="level0 nav-5 level-top parent">
+            <li class="level0 nav-5 level-top parent service">
                 <a href="category.php?c=4"  class="level-top"><span >Услуги</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
