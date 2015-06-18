@@ -126,6 +126,7 @@ while ($news = mysql_fetch_object($newsQ))
     <link rel="stylesheet" type="text/css" href="css/c75faf8efb186c9fe21955957b238d75_1429528198.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/54b530786bfaad6f6b0b47127b3eb8bf_1429528194.css" media="print" />
     <script type="text/javascript" src="js/7306e16e41b7ffe6ec31f4c9d92f7b02_1429528198.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="canonical" href="http://www.mebelgid.kg/" />
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="css/02575c53fc10f8807d8b5cb009e8b505_1429528194.css" media="all" />
@@ -427,7 +428,7 @@ while ($news = mysql_fetch_object($newsQ))
                     </ul>
                 </div>
                 <h2 class="sub-title sale"><a href="news.php">Распродажа мебели, скидки и акции</a></h2>
-                <div class="recent-posts">
+                <div class="category-products">
                     <ul class="posts-list" id="wp-81e">
                         <?if($obj1 != null) {?>
                             <li>
@@ -542,7 +543,7 @@ while ($news = mysql_fetch_object($newsQ))
                     });
                     //]]>
                 </script>
-                <div class="recent-posts">
+                <div class="category-products">
                     <h2 class="sub-title design"><a href="#">Дизайн интерьеров</a></h2>
                     <ul class="posts-list" id="wp-81e">
                         <li>
@@ -561,6 +562,27 @@ while ($news = mysql_fetch_object($newsQ))
                             <p>If you’ve recently come back from a holiday, you’re most likely having post-holiday blues. You may even be someone who hasn’t had a break in a l... <a class="more-link" href="#">Read more</a></p>
                         </li>
                     </ul>
+                </div>
+                <div class="category-products">
+                    <h2 class="sub-title design"><a href="#">Мебельные салоны</a></h2>
+                    <div><img src="images/stores.png" /></div>
+                    <div class="stores-info">
+                        <p><strong>Buy Wooden Furniture Online</strong><br />
+                        Pepperfry - India’s largest home shopping destination offers a wide range of home and office furniture online.  The right furniture for your home will add 
+                        elegance and functionality to your interior decor, while it will also be cost effective and long lasting at the same time. Enjoy fast shipping as well as cash on 
+                        delivery at our online store.</p>
+                        <p><strong>Furniture for Every Purpose</strong><br />
+                        Here at Pepperfry, we are committed to offering our customers the widest range in home furniture like tables, sofas, chairs for living room as well as beds, 
+                        wardrobes, side tables, dressing tables for bedroom and crockery cabinets, chest of drawers for kitchen, so that it is easy and hassle free to buy furniture online. 
+                        We also offer office furniture like desks, wheel chairs, shoe racks, storage and reception cabinets. See various designs side by side, compare prices and 
+                        finishes and find exclusive modular furniture pieces that you would not find at local furniture stores.</p>
+                        <p><strong>Exclusive Range of Furniture Online</strong><br />
+                        Our exhaustive range offers multiple options in solid, sheesham wood furniture pieces, while all our wooden furniture can also be customized to suit the 
+                        individual needs of our customers. Our furniture is intelligently designed to give both comfort and functionality; while we also go to great lengths to ensure 
+                        that we source only the highest quality raw materials and use the latest technologies to manufacture each individual piece. Pepperfry.com is the best place 
+                        to buy metal as well as wooden furniture online in India. Check our wide range of products for Home Decor, Bed & Bath, Kitchen& Dining and Appliances. 
+                        So go ahead now and take a good look at our online shopping store.</p>
+                    </div>
                 </div>
                 <a class="main-back go-to" href="#header"><span>Вверх</span></a>
             </div>

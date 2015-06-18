@@ -11641,3 +11641,17 @@ div.solrbridge-overlay div {
     float: left;
     margin: 3px 3px 0;
 }
+
+.stores-info {
+	margin-top: 20px;
+}
+
+.stores-info p {
+	color: #000;
+	font: 400 14px/25px Open Sans, Arial;
+}
+.stores-info strong {
+	font: bold 14px/25px Open Sans, Arial;
+}
+
+	
