@@ -4401,7 +4401,8 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .sale-slider .products-grid .item:nth-child(4n) {
 	width: 33.33%;
 }
-.sale-slider .products-grid {
+.sale-slider .products-grid,
+.salons-slider .products-grid {
 	width: 1025px !important;
 }
 .products-grid .store-label{
