@@ -390,94 +390,172 @@ while ($news = mysql_fetch_object($newsQ))
             <div class="col-main">
                 <h2 class="sub-title hotsalons"><a href="#">Горячие предложения от салонов и частников</a></h2>
                 <div class="category-products">
-                    <ul class="products-grid col4grid">
-                        <? while($adv = mysql_fetch_object($hotSalons)) {
-                            $pc = $adv->pricecurrency;
-                            if($adv->pricecurrency == "kgs") $pc = "сом";
-                            ?>
-                            <li class="item">
-                                <a href="show.php?type=goods&id=<?=$adv->id?>" title="<?=$adv->title?>" class="product-image">
-                                    <img data-src="" class="" src="uploads/<?=$adv->id?>_0_215.jpg" alt="<?=$adv->title?>">
-                                    <span class="loading hidden"></span>
-                                    <span class="sale-label hidden" title="Sale">Sale</span>
-                                </a>
-                                <div class="price-box">
-                                            <span class="regular-price" id="product-price">
-                                                <span class="price"><?=$adv->price." ".$pc?></span></span>
-                                </div>
-                                <h2 class="product-name"><a href="show.php?type=goods&id=<?=$adv->id?>" title="<?=$adv->title?>"><?=$adv->title?></a></h2>
-                                <span style="color: gray"><?=$adv->user_salonname?></span>
-                            </li>
-                        <? } ?>
+                    <ul class="products-grid">
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/prod1.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 5000 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                <img data-src="" class="" src="images/prod6.png" alt="Гарнитура 8">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 5000 сом</span></span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                <img data-src="" class="" src="images/prod7.png" alt="Офисные стулья от салона">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 7888888 сом</span></span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                <img data-src="" class="" src="images/prod8.png" alt="Гарнитура ВуМе2">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 90000 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
 
-                        <? while($advp = mysql_fetch_object($hotPrivates)) { ?>
-                            <li class="item">
-                                <a href="show.php?type=goods&id=<?=$advp->id?>" title="<?=$advp->title?>" class="product-image">
-                                    <img data-src="" class="" src="uploads/<?=$advp->id?>_0_215.jpg" alt="<?=$advp->title?>">
-                                    <span class="loading hidden"></span>
-                                    <span class="sale-label hidden" title="Sale">Sale</span>
-                                </a>
-                                <div class="price-box">
-                                            <span class="regular-price" id="product-price">
-                                                <span class="price"><?=$advp->price." ".$advp->pricecurrency?></span></span>
-                                </div>
-                                <h2 class="product-name"><a href="show.php?type=goods&id=<?=$advp->id?>" title="<?=$advp->title?>"><?=$advp->title?></a></h2>
-                                <span style="color: gray"><?=$advp->user_salonname?></span>
-                            </li>
-                        <? } ?>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                <img data-src="" class="" src="images/prod9.png" alt="Офисные стулья от салона">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 7888888 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
                     </ul>
                 </div>
+
                 <h2 class="sub-title sale"><a href="news.php">Распродажа мебели, скидки и акции</a></h2>
-                <div class="category-products">
-                    <ul class="posts-list" id="wp-81e">
-                        <?if($obj1 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj1->id?>" title="<?=$obj1->title?>"><img src="uploads/<?=$obj1->id?>_0_330_news.jpg" alt="<?=$obj1->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj1->id?>"><?=$obj1->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
-                        <?if($obj2 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj2->id?>" title="<?=$obj2->title?>"><img src="uploads/<?=$obj2->id?>_0_330_news.jpg" alt="<?=$obj2->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj2->id?>"><?=$obj2->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
-                        <?if($obj3 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj3->id?>" title="<?=$obj3->title?>"><img src="uploads/<?=$obj3->id?>_0_330_news.jpg" alt="<?=$obj3->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj3->id?>"><?=$obj3->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
+                <div class="category-products sale">
+                    <ul class="products-grid">
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/prod10.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 5000 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Гарнитура ВуМе</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8" class="product-image">
+                                <img data-src="" class="" src="images/prod2.png" alt="Гарнитура 8">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 5000 сом</span></span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=72" title="Гарнитура 8">Гарнитура 8</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                <img data-src="" class="" src="images/prod3.png" alt="Офисные стулья от салона">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 7888888 сом</span></span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2" class="product-image">
+                                <img data-src="" class="" src="images/prod4.png" alt="Гарнитура ВуМе2">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 90000 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=76" title="Гарнитура ВуМе2">Гарнитура ВуМе2</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
+
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона" class="product-image">
+                                <img data-src="" class="" src="images/prod5.png" alt="Офисные стулья от салона">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <div class="price-box">
+                                <span class="regular-price" id="product-price">
+                                    <span class="price">от 7888888 сом</span>
+                                </span>
+                            </div>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=75" title="Офисные стулья от салона">Офисные стулья от салона</a><br>
+                                <span>nurik salon</span>
+                            </h2>
+                        </li>
                     </ul>
-                    <ul class="posts-list" id="wp-81e">
-                        <?if($obj4 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj4->id?>" title="<?=$obj4->title?>"><img src="uploads/<?=$obj4->id?>_0_330_news.jpg" alt="<?=$obj4->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj4->id?>"><?=$obj4->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
-                        <?if($obj5 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj5->id?>" title="<?=$obj5->title?>"><img src="uploads/<?=$obj5->id?>_0_330_news.jpg" alt="<?=$obj5->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj5->id?>"><?=$obj5->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
-                        <?if($obj6 != null) {?>
-                            <li>
-                                <a class="image-block" href="show.php?type=news&id=<?=$obj6->id?>" title="<?=$obj6->title?>"><img src="uploads/<?=$obj6->id?>_0_330_news.jpg" alt="<?=$obj6->title?>"/></a>
-                                <h3><a href="show.php?type=news&id=<?=$obj6->id?>"><?=$obj6->title?></a></h3>
-                                <p>&nbsp;</p>
-                            </li>
-                        <?}?>
-                    </ul>
-                    <div class="mainSalonsNewsBlock">
-                        <a class="blackLink" href="news.php"><?if($obj1 != null || $obj2 != null || $obj3 != null || $obj4 != null || $obj5 != null || $obj6 != null) echo "Все скидки и акции"?></a>
-                    </div>
                 </div>
                 <script type="text/javascript">
                     //<![CDATA[
@@ -545,21 +623,39 @@ while ($news = mysql_fetch_object($newsQ))
                 </script>
                 <div class="category-products">
                     <h2 class="sub-title design"><a href="#">Дизайн интерьеров</a></h2>
-                    <ul class="posts-list" id="wp-81e">
-                        <li>
-                            <a class="image-block" href="#" title="Small Space Living Tips"><img src="images/Get-Studious-330x204.jpg" alt="Small Space Living Tips"/></a>
-                            <h3><a href="#">Small Space Living Tips</a></h3>
-                            <p>The smaller your space, the more daunting the decorating and furnishing process can be. Every single piece requires thought and needs to be carefully ... <a class="more-link" href="#">Read more</a></p>
+                    <ul class="products-grid">
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
                         </li>
-                        <li>
-                            <a class="image-block" href="#" title="Scandinavian Style 101"><img src="images/Cool-Scandinavian-Living-Room-330x204.jpg" alt="Scandinavian Style 101"/></a>
-                            <h3><a href="#">Scandinavian Style 101</a></h3>
-                            <p>Scandinavian style furniture is not just confined to Eames and the set of Mad Men. Its popularity has been trending for some time and with its extens... <a class="more-link" href="#">Read more</a></p>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo2.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
                         </li>
-                        <li>
-                            <a class="image-block" href="#" title="How To Recreate Your Recent Holiday At Home"><img src="images/a_Festive2-330x204.jpg" alt="How To Recreate Your Recent Holiday At Home"/></a>
-                            <h3><a href="#">How To Recreate Your Recent Holiday At Home</a></h3>
-                            <p>If you’ve recently come back from a holiday, you’re most likely having post-holiday blues. You may even be someone who hasn’t had a break in a l... <a class="more-link" href="#">Read more</a></p>
+                        <li class="item">
+                            <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе" class="product-image">
+                                <img data-src="" class="" src="images/allergo3.png" alt="Гарнитура ВуМе">
+                                <span class="loading hidden"></span>
+                                <span class="sale-label hidden" title="Sale">Sale</span>
+                            </a>
+                            <h2 class="product-name">
+                                <a href="show.php?type=goods&amp;id=71" title="Гарнитура ВуМе">Спальный гарнитур Аллегро</a><br>
+                                <span>Джихаз Мебель</span>
+                            </h2>
                         </li>
                     </ul>
                 </div>

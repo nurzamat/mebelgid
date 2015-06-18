@@ -379,7 +379,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                         <li><a class="" href="category.php?c=3&cat=other">Прочее интересное</a></li>
                     </ul>
                     <div class="category-image">
-                        <img src="images/dining-tables.jpg" alt="Dining Room" />
+                        <img src="images/office-img.png" alt="Dining Room" />
                     </div>
                 </div>
             </li>
