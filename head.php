@@ -271,8 +271,8 @@ $id_service = mysql_fetch_object($q5)->ID;
                 <input value="Go" type="submit"/>
             </form>
             <div class="enter-like">
-                <a href="#"><img src="images/usericon.png" />Войти</a>
-                <a href="#">Нравится (0)</a>
+                <a href="#"><img src="images/usericon.png" /><span>Войти</span></a>
+                <a href="#"><img src="images/heart.png" /><span>Нравится (0)</span></a>
             </div>
         </div>
 
@@ -292,37 +292,12 @@ $id_service = mysql_fetch_object($q5)->ID;
         </script>
     </div>
     <div class="content">
-        <a href='#' id='citySelect' class='blackLink' onclick="jQuery('#selectCity').fadeIn(200); return false;" rel="nofollow"><?=$city?><img src='images/darr.gif' alt='↓' /></a>
-        <ul id='selectCity'>
-            <?
-            if($city == "Бишкек")
-                echo "<li>Бишкек&nbsp;<small class='gray'>$recordsBishkek</small></li>
-    <li><a href='index.php?city=osh' class='blackLink'>Ош</a>&nbsp;<small class='gray'>$recordsOsh</small></li>
-    <li><a href='index.php?city=cholponata' class='blackLink'>Чолпон-Ата</a>&nbsp;<small class='gray'>$recordsCholponata</small></li>
-    <li><a href='index.php?city=karakol' class='blackLink'>Каракол</a>&nbsp;<small class='gray'>$recordsKarakol</small></li>";
-            if($city == "Ош")
-                echo "<li><a href='index.php?city=bishkek' class='blackLink'>Бишкек</a>&nbsp;<small class='gray'>$recordsBishkek</small></li>
-    <li>Ош&nbsp;<small class='gray'>$recordsOsh</small></li>
-    <li><a href='index.php?city=cholponata' class='blackLink'>Чолпон-Ата</a>&nbsp;<small class='gray'>$recordsCholponata</small></li>
-    <li><a href='index.php?city=karakol' class='blackLink'>Каракол</a>&nbsp;<small class='gray'>$recordsKarakol</small></li>";
-            if($city == "Чолпон-Ата")
-                echo "<li><a href='index.php?city=bishkek' class='blackLink'>Бишкек</a>&nbsp;<small class='gray'>$recordsBishkek</small></li>
-    <li><a href='index.php?city=osh' class='blackLink'>Ош</a>&nbsp;<small class='gray'>$recordsOsh</small></li>
-    <li>Чолпон-Ата&nbsp;<small class='gray'>$recordsCholponata</small></li>
-    <li><a href='index.php?city=karakol' class='blackLink'>Каракол</a>&nbsp;<small class='gray'>$recordsKarakol</small></li>";
-            if($city == "Каракол")
-                echo "<li><a href='index.php?city=bishkek' class='blackLink'>Бишкек</a>&nbsp;<small class='gray'>$recordsBishkek</small></li>
-    <li><a href='index.php?city=osh' class='blackLink'>Ош</a>&nbsp;<small class='gray'>$recordsOsh</small></li>
-    <li><a href='index.php?city=cholponata' class='blackLink'>Чолпон-Ата</a>&nbsp;<small class='gray'>$recordsCholponata</small></li>
-    <li>Каракол&nbsp;<small class='gray'>$recordsKarakol</small></li>";
-            ?>
-        </ul>
     </div>
     <div class="nav-container">
         <a class="btn-rug-finder" href="#popup1"><span>Mebel Finder</span></a>
         <ul id="nav">
             <li  class="level0 nav-1 first level-top parent">
-                <a href="category.php?c=1"  class="level-top"  style="background-color: #F47B4B"><span >Мебель для дома</span></a>
+                <a href="category.php?c=1"  class="level-top"><span >Мебель для дома</span></a>
                 <div class="drop">
                     <div class="category-col">
                         <a class="category-visual" href="category.php?c=1&cat=kitchen"><span class="image-block"><img src="images/beds-mattresses.jpg" alt="" /></span><strong class="title">Кухня</strong></a>
@@ -390,7 +365,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                 </div>
             </li>
             <li  class="level0 nav-2 level-top parent">
-                <a href="category.php?c=3"  class="level-top" style="background-color: #F47B4B"><span >Мебель для офиса</span></a>
+                <a href="category.php?c=3"  class="level-top"><span >Мебель для офиса</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
                         <li><a class="" href="category.php?c=3&cat=boss">Мебель руководителю</a></li>
@@ -409,7 +384,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                 </div>
             </li>
             <li  class="level0 nav-3 level-top parent">
-                <a href="#"  class="level-top" style="background-color: #F47B4B" ><span >Профильная для бизнеса</span></a>
+                <a href="#"  class="level-top"><span >Профильная для бизнеса</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
                         <li><a class="" href=""><strong>Торговое оборудование</strong></a></li>
@@ -428,7 +403,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                 </div>
             </li>
             <li  class="level0 nav-4 level-top parent">
-                <a href="category.php?c=2"  class="level-top" style="background-color: #F47B4B"><span >Все для интеръера</span></a>
+                <a href="category.php?c=2"  class="level-top"><span >Все для интеръера</span></a>
                 <div class="drop">
                     <div class="category-col">
                         <a class="category-visual" href="category.php?c=2&cat=light"><span class="image-block"><img src="images/beds-mattresses.jpg" alt="" /></span><strong class="title">Свет</strong></a>
@@ -473,7 +448,7 @@ $id_service = mysql_fetch_object($q5)->ID;
                 </div>
             </li>
             <li class="level0 nav-5 level-top parent">
-                <a href="category.php?c=4"  class="level-top" style="background-color: #F47B4B" ><span >Услуги</span></a>
+                <a href="category.php?c=4"  class="level-top"><span >Услуги</span></a>
                 <div class="drop special-drop">
                     <ul class="sub-category-list">
                         <li><a class="" href="category.php?c=4&cat=design">Услуги дизайна</a></li>

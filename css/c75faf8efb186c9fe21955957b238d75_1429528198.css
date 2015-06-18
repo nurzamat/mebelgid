@@ -2544,6 +2544,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .header-holder{
 	padding:0 0 5px;
 	position:relative;
+	margin-top: 45px;
 }
 .header .logo{
 	float:left;
@@ -2570,9 +2571,32 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	overflow:hidden;
 	background:#fff;
 	padding:0 36px 0 0;
-	width: 250px;
+	width: 300px;
+	float: left;
 }
-.search-holder.parent-active{border-color:#b3b0a1;}
+.search-holder.parent-active{
+	border-color:#b3b0a1;
+}
+
+.enter-like {
+	float: left;
+	margin: 9px 0 0 8px;
+}
+.enter-like a{
+	font-size: 10px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+.enter-like a:first-child {
+	border-right: 1px solid #312a20;
+}
+.enter-like a img {
+	margin-right: 5px;
+}
+.enter-like a * {
+	vertical-align: middle;
+}
 
 .branding {
 	width: 25%;
@@ -2593,6 +2617,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	width: 25%;
 	text-align: right;
 	padding: 0;
+	margin-top: -18px;
 }
 .form-search input[type="text"]{
 	border:0;
@@ -2697,11 +2722,13 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 .nav-container{
 	position:relative;
-	margin:10px 0 5px;
-	background:green;
+	margin: 20px 0 5px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
+}
+.first a{
+	background: url(../images/house.png) left center;
 }
 .nav-container .btn-rug-finder{
 	display:none;
@@ -2842,21 +2869,26 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	text-align:center;
 	color:#fff;
 	display:block;
-	border-right:1px solid #393939;
+	border-right:1px solid #fff;
 	background:#F47B4B;
 	padding:9px 5px;
 	position:relative;
+	font-size: 14px;
+	font-weight: bold;
+}
+#nav > li > a:hover {
+	background-color: #7b6450;
 }
 #nav > li.btn-sale > a{
 	
 	font-family:"Proximanova Bold", Arial, Helvetica, sans-serif;
 }
 #nav > li > a.active{background:#393939;}
-#nav > li > a:after{}
-#nav > li:first-child > a{
-	-moz-border-radius:4px 0 0 4px;
-	-webkit-border-radius:4px 0 0 4px;
-	border-radius:4px 0 0 4px;
+
+#nav > li:hover > a{
+	-moz-border-radius:4px ;
+	-webkit-border-radius:4px;
+	border-radius:4px;
 }
 #nav > li.last > a{
 	border:0;
@@ -2864,7 +2896,6 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	-webkit-border-radius:0 4px 4px 0;
 	border-radius:0 4px 4px 0;
 }
-#nav > li:hover > a{background:#868277;}
 #nav > li > a:hover{text-decoration:none;}
 #nav a.level-top{
 	white-space:nowrap;
@@ -2880,18 +2911,6 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	vertical-align:middle;	
 	height:100%;
 	width:1px;
-}
-
-#nav > li.parent:hover > a:after{
-	content:"";
-	position:absolute;
-	left:50%;
-	bottom:0;
-	z-index:11;
-	margin:0 0 0 -5px;
-	width:10px;
-	height:8px;
-	background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-global.png) no-repeat -4px -13px;
 }
 /* 2nd Level */
 #nav .drop{
