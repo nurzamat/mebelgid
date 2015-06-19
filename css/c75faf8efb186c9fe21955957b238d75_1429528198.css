@@ -2599,7 +2599,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 
 .enter-like {
 	float: left;
-	margin: 9px 0 0 8px;
+	margin: 9px 0 0 4px;
 }
 .enter-like a{
 	font-size: 12px;
@@ -2612,7 +2612,12 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 .enter-like a img {
 	margin-right: 5px;
+	width: 10px;
 }
+.enter-like a:last-child img {
+	width: 15px;
+}
+
 .enter-like a * {
 	vertical-align: middle;
 }
@@ -2741,7 +2746,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 .nav-container{
 	position:relative;
-	margin: 20px 0 5px;
+	margin: 20px 0 20px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -11703,4 +11708,14 @@ div.solrbridge-overlay div {
 
 .bx-wrapper .bx-viewport {
 	left: 0;
+}
+
+.header-contact {  
+	position: absolute;
+	top: 8px;
+	right: 0;
+}
+
+.header-contact img{
+	width: 100px;
 }

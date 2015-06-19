@@ -252,6 +252,9 @@ $id_service = mysql_fetch_object($q5)->ID;
                         <?}?>
                     </li>
                 </ul>
+                <div class="header-contact">
+                    <img src="images/phone.png" />
+                </div> 
             </div>
         </div>
     </div>
