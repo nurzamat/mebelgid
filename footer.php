@@ -16,7 +16,7 @@
                             <input name="monkey_email" type="text" id="newsletter" placeholder="Напиши свою почту и получи скидку на 20%" value="Напиши свою почту и получи скидку на 20%" onclick="this.value=='Напиши свою почту и получи скидку на 20%'?this.value='':''" onblur="this.value==''?this.value='Введите email':''" class="input-text required-entry validate-email" />
                         </div>
                         <input type="hidden" class="monkey-list-subscriber" value="dc044e6f43" name="list[dc044e6f43][subscribed]" id="dc044e6f43">
-                        <button type="submit" class="button grey" title="Subscribe">Подписаться</button>
+                        <button type="submit" class="button" title="Subscribe">Подписаться</button>
                     </div>
                 </div>
             </form>
@@ -28,10 +28,12 @@
             </script>
             <div class="social-block"><h3>Присоединяйтесь к нам</h3>
                 <ul class="social-list">
-                    <li class="facebook"><a title="Facebook" href="https://www.facebook.com/mebelgid" target="_blank">facebook</a></li>
                     <li class="twitter"><a title="Twitter" href="https://twitter.com/mebelgid" target="_blank">twitter</a></li>
-                    <li class="pinterest"><a title="Pinterest" href="http://www.pinterest.com/mebelgid/" target="_blank">pinterest</a></li>
+                    <li class="facebook"><a title="Facebook" href="https://www.facebook.com/mebelgid" target="_blank">facebook</a></li>
                     <li class="youtube"><a title="YouTube" href="https://www.youtube.com/user/mebelgid" target="_blank">youtube</a></li>
+                    <li class="insta"><a title="Instagram" href="#" target="_blank">instagram</a></li>
+                    <li class="google-plus"><a title="Google Plus" href="#" target="_blank">Google Plus</a></li>
+                    <li class="pinterest"><a title="Pinterest" href="http://www.pinterest.com/mebelgid/" target="_blank">pinterest</a></li>
                 </ul></div></div>		<div class="footer-info"><div class="info-holder">
                 <div class="info-column">
                     <h3>О нас</h3>
@@ -73,8 +75,7 @@
         <div class="copyright-block">
             <div class="copyright-holder">
                 <strong class="footer-logo"><img src="images/logo_footer.png" alt="MebelGid" /></strong>
-                <address class="copyright" style="color: white;">&copy; Все права защищены 2015<br />
-                    Сайт разработан: www.ananasit.org</address>
+                <address class="copyright" style="color: white;">&copy; Все права защищены 2015</address>
             </div>
         </div>
     </div>

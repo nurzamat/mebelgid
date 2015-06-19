@@ -118,7 +118,7 @@ src:url('//www.furnitureonline.com.au/skin/frontend/ventures/default/fonts/proxi
 body{
 	background:#fff;
 	font:14px/18px "Proximanova Regular", Arial, Helvetica, sans-serif;
-	color:#F47B4B;
+	color:#ff7c46;
 }
 img{
 	border:0;
@@ -792,7 +792,7 @@ button.button::-moz-focus-inner{
 	border:0;
 	padding:12px 11px 10px;
 	margin:0;
-	background:#F47B4B;
+	background:#ff7c46;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
@@ -818,7 +818,7 @@ button.button::-moz-focus-inner{
 }
 .popup .button.dark-green,
 .popup-block .button.dark-green,
-.wrapper .button.dark-green{background:#F47B4B;}
+.wrapper .button.dark-green{background:#ff7c46;}
 .popup .button.light-grey,
 .popup-block .button.light-grey,
 .wrapper .button.light-grey{
@@ -1763,8 +1763,8 @@ p.required{
 	border-radius:4px;
 }
 .btn-clear:hover{
-	color:#F47B4B;
-	border-color:#F47B4B;
+	color:#ff7c46;
+	border-color:#ff7c46;
 	text-decoration:none;
 }
 /* Data Table */
@@ -1840,7 +1840,7 @@ p.required{
 }
 #review-form{overflow:hidden;}
 .review-form-holder h2{
-	color:#F47B4B;
+	color:#ff7c46;
 	margin:0 0 28px;
 	letter-spacing:0.6px;
 	text-transform:uppercase;
@@ -1851,7 +1851,7 @@ p.required{
 .rate-block .validation-advice { display: none; margin-bottom: 6px; }
 #review-form h3{
 	margin:0 0 25px;
-	color:#F47B4B;
+	color:#ff7c46;
 	letter-spacing:0.4px;
 	font:18px/18px "Proximanova Bold", Arial, Helvetica, sans-serif;
 }
@@ -2233,7 +2233,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 
 .header-panel{
 	background:#F9DCC7;
-	border-top: 4px solid #db7858;
+	border-top: 4px solid #ff7c46;
 	margin:0 -9999px 25px;
 	padding:0 9999px;
 }
@@ -2505,7 +2505,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .subscribe-link a{
 	display:inline-block;
 	vertical-align:top;
-	color:#F47B4B;
+	color:#ff7c46;
 }
 .subscribe-link a:after{
 	content:"";
@@ -2523,7 +2523,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	position:relative;
 	margin:0 0 0 15px;
 	padding:0 0 0 38px;
-	color:#F47B4B;
+	color:#ff7c46;
 }
 .phone-block:after{
 	content:"";
@@ -2895,7 +2895,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	color:#fff;
 	display:block;
 	border-right:1px solid #fff;
-	background:#F47B4B;
+	background:#ff7c46;
 	padding:9px 5px;
 	position:relative;
 	font-size: 14px;
@@ -2996,7 +2996,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	position:relative;
 	padding:0 20px 9px 0;
 	margin-bottom:6px;
-	border-bottom:1px solid #db7858;
+	border-bottom:1px solid #ff7c46;
 	font:14px/20px 'Proximanova Bold', Arial, Helvetica, sans-serif;
 	letter-spacing:-0.3px;
 }
@@ -3209,7 +3209,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	right:0;
 	width:60px;
 	height:60px;
-	background:#F47B4B;
+	background:#ff7c46;
 	text-indent:-9999px;
 	overflow:hidden;
 }
@@ -3529,7 +3529,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .home-image-gallery .switcher li:hover{background-position:-15px -148px;}
 .home-image-gallery .switcher li.active{background-position:-30px -148px;}
 .sub-finder{
-	color:#F47B4B;
+	color:#ff7c46;
 	margin:-30px auto 30px;
 	max-width:1050px;
 	text-align:center;
@@ -3986,7 +3986,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	font:14px/18px 'Proximanova Bold', Arial, Helvetica, sans-serif;
 	text-transform:uppercase;
 	letter-spacing:0.2px;
-	color:#F47B4B;
+	color:#ff7c46;
 }
 .block-account .block-content li{
 	margin-bottom:10px;
@@ -3994,7 +3994,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	line-height:18px;
 	letter-spacing:0.3px;
 }
-.block-account .block-content li strong{color:#F47B4B;}
+.block-account .block-content li strong{color:#ff7c46;}
 .block-account .block-content a{color:#A5886E;}
 .block-account.mobile{
 	padding:0;
@@ -4327,7 +4327,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .landing-description h2,
 .landing-description h3,
 .landing-description h4{
-	color:#F47B4B;
+	color:#ff7c46;
 	margin:0 0 7px;
 	text-transform:uppercase;
 	font:14px/18px "Proximanova Bold", Arial, Helvetica, sans-serif;
@@ -4714,7 +4714,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	height:10px;
 	border-left:1px solid #ffa374;
 }
-.ratings .rating-links a{color:#F47B4B;}
+.ratings .rating-links a{color:#ff7c46;}
 .ratings dt{}
 .ratings dd{}
 .rating-box{
@@ -4765,7 +4765,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .total-reviews .total-block{
 	float:left;
 	text-transform:uppercase;
-	color:#F47B4B;
+	color:#ff7c46;
 	padding:15px 8px 15px 21px;
 	letter-spacing:0.3px;
 	min-width:230px;
@@ -4884,9 +4884,9 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .box-reviews.active .first-review{display:none;}
 .wrapper .btn-first-review{
 	display:inline-block;
-	color:#F47B4B;
+	color:#ff7c46;
 	background:#fff;
-	border:1px solid #F47B4B;
+	border:1px solid #ff7c46;
 	text-transform:none;
 	padding:8px 13px 10px;
 	font:16px/20px "Proximanova Regular", Arial, Helvetica, sans-serif;
@@ -4900,7 +4900,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	float:left;
 	padding:0 5px 0 0;
 	min-width:74px;
-	color:#F47B4B;
+	color:#ff7c46;
 }
 .review-title{
 	margin:0 0 8px;
@@ -5683,7 +5683,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 }
 .size-drop .title{
 	display:block;
-	color:#F47B4B;
+	color:#ff7c46;
 	padding:0 0 14px;
 	letter-spacing:0.4px;
 	font:18px/22px "Proximanova Regular", Arial, Helvetica, sans-serif;
@@ -5748,7 +5748,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	color:#ffa374;
 }
 .size-total-price{
-	color:#F47B4B;
+	color:#ff7c46;
 	letter-spacing:0.4px;
 	padding:14px 0 15px;
 	border-top:1px solid #e1dfd9;
@@ -6519,7 +6519,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	width:50%;
 	height:4px;
 	margin-top:-2px;
-	background:#F47B4B;
+	background:#ff7c46;
 }
 .checkout-progress-bar li:after{left:50%;}
 .checkout-progress-bar li:before{right:50%;}
@@ -6642,8 +6642,8 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .opc .allow.active .step-title h2:after{display:none;}
 .opc .active{}
 .opc .active .step-title{
-	background:#F47B4B;
-	border-bottom-color:#F47B4B;
+	background:#ff7c46;
+	border-bottom-color:#ff7c46;
 	cursor:default;
 }
 .opc .step{
@@ -6915,7 +6915,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .checkout-totals .payment-gateway{
 	border:1px solid #e1dfd9;
 	background:#fff;
-	color:#F47B4B;
+	color:#ff7c46;
 	font-size:13px;
 	line-height:18px;
 	letter-spacing:0.5px;
@@ -7408,7 +7408,7 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 	min-width:100.3%;
 }
 .my-account .data-table-wrap .orders-table thead,
-.my-account .data-table-wrap.custom-table .data-table thead{background:#F47B4B;}
+.my-account .data-table-wrap.custom-table .data-table thead{background:#ff7c46;}
 .my-account .data-table-wrap .orders-table thead th,
 .my-account .data-table-wrap.custom-table .data-table thead th{
 	color:#fff;
@@ -7618,8 +7618,8 @@ a.link-go-right:hover:after{background-position:-70px -32px;}
 .item-links .item:hover > button.link,
 .item-links .item > button.link:hover,
 .item-links .item > a:hover{
-	border-color:#F47B4B;
-	color:#F47B4B;
+	border-color:#ff7c46;
+	color:#ff7c46;
 	text-decoration:none;
 }
 .item-links .split-button .change{right:10px;}
@@ -7993,7 +7993,7 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 .wishlist-management .wishlist-control .split-button:hover .change{background-position:-10px 0;}
 .wishlist-management .note-msg{clear:both;margin:0 0 15px;}
 .wishlist-management .table-caption{
-	background:#F47B4B;
+	background:#ff7c46;
 	padding:5px 10px 5px 20px;
 }
 .wishlist-management .table-caption .select-all{
@@ -8093,11 +8093,11 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 .cms-page-view .col-main .std{ margin-bottom: 35px; }
 .cms-page-view .col-left.sidebar { margin-bottom: 30px; }
 .cms-page-view .col-left.sidebar ul.cms-menu{background-color: #f0efec;padding: 30px; margin-bottom: 30px;}
-.cms-page-view .col-left.sidebar ul.cms-menu li.parent > a{color: #F47B4B;font-family: "Proximanova Bold";text-transform: uppercase;}
+.cms-page-view .col-left.sidebar ul.cms-menu li.parent > a{color: #ff7c46;font-family: "Proximanova Bold";text-transform: uppercase;}
 .cms-page-view .col-left.sidebar ul.cms-menu li.parent > a:hover{text-decoration: none;}
 .cms-page-view .col-left.sidebar ul.cms-menu li.parent ul{margin-top: 20px;}
 .cms-page-view .col-left.sidebar ul.cms-menu li.parent ul li{margin-bottom: 10px;}
-.cms-page-view .col-left.sidebar ul.cms-menu li.parent ul li strong{color: #F47B4B;}
+.cms-page-view .col-left.sidebar ul.cms-menu li.parent ul li strong{color: #ff7c46;}
 
 .customer-account-logoutsuccess .col-main p{padding-bottom: 35px;text-align: center;}
 
@@ -8220,16 +8220,19 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 #footer h3{
 	letter-spacing:0.3px;
 	margin:0 0 8px;
-	font:14px/22px "Proximanova Bold", Arial,Helvetica,sans-serif;
+	font: bold 14px/22px Open Sans, Arial,Helvetica,sans-serif;
 }
 .footer-holder{
-	max-width:1050px;
+	max-width: 985px;
 	margin:0 auto;
+}
+.form-subscribe .button:hover {
+	background: #ff7c46;
 }
 .footer-contact{
 	margin:0 0 26px;
 	padding:0 0 20px;
-	border-bottom:1px solid #d1d0c7;
+	border-bottom:1px dashed #fff;
 }
 .newsletter{
 	float:left;
@@ -8284,9 +8287,12 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 	float:right;
 	width:140px;
 	margin:0 0 0 -140px;
-	-moz-border-radius:0 4px 4px 0;
-	-webkit-border-radius:0 4px 4px 0;
-	border-radius:0 4px 4px 0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	left: -2px;
+
 }
 .newsletter .coupon{
 	position:absolute;
@@ -8302,6 +8308,10 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 .social-block{
 	float:right;
 	width:38.2%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /*Firefox 1-3*/
+    -webkit-box-sizing: border-box; /* Safari */
+	padding-left: 60px;
 }
 .social-list{overflow:hidden;}
 .social-list li{
@@ -8314,18 +8324,19 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 	text-indent:-9999px;
 	width:40px;
 	height:40px;
-	background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-global.png) no-repeat;
+	background:url(../images/social-sprite.png) no-repeat;
 }
-.social-list .facebook a{background-position:0 -453px;}
-.social-list .facebook a:hover{background-position:0 -493px;}
-.social-list .twitter a{background-position:-40px -453px;}
-.social-list .twitter a:hover{background-position:-40px -493px;}
-.social-list .pinterest a{background-position:-80px -453px;}
-.social-list .pinterest a:hover{background-position:-80px -493px;}
-.social-list .google-plus a{background-position:-120px -453px;}
-.social-list .google-plus a:hover{background-position:-120px -493px;}
-.social-list .youtube a{background-position:-160px -453px;}
-.social-list .youtube a:hover{background-position:-160px -493px;}
+.social-list .facebook a{background-position:0px 0px;}
+.social-list .facebook a:hover{}
+.social-list .twitter a{background-position:0px -200px;}
+.social-list .twitter a:hover{}
+.social-list .pinterest a{background-position:0px -150px;}
+.social-list .pinterest a:hover{}
+.social-list .google-plus a{background-position:0px -50px;}
+.social-list .google-plus a:hover{}
+.social-list .youtube a{background-position: 0px -250px;}
+.social-list .youtube a:hover{}
+.social-list .insta a{background-position:0px -100px;}
 .footer-info{
 	overflow:hidden;
 	padding:0 0 35px;
@@ -8343,7 +8354,7 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 	line-height:22px;
 	float:left;
 	width:25%;
-	padding:0 40px 0 0;
+	padding:0 20px 0 0;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
@@ -8375,7 +8386,7 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 .contact-phone .phone-holder{color:#A5886E;}
 .contact-phone .call-holder{display:none;}
 .callback-holder{cursor:pointer;}
-#footer .contact-phone a{color:#F47B4B;}
+#footer .contact-phone a{color:#ff7c46;}
 #footer .contact-phone a:hover{text-decoration:none;}
 .contact-phone .title{
 	letter-spacing:0.3px;
@@ -8416,7 +8427,7 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 }
 .free-call span{
 	cursor:pointer;
-	color:#F47B4B;
+	color:#ff7c46;
 	display:inline-block;
 	vertical-align:top;
 	padding:0 22px 0 0;
@@ -8441,9 +8452,13 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 	line-height:18px;
 	overflow:hidden;
 	color:#bcbcbc;
-	background:#F47B4B;
+	background:#ff7c46;
 	margin:0 -9999px;
 	padding:16px 9999px 18px;
+}
+
+.copyright-block .copyright {
+	margin-top: 13px;
 }
 .copyright-holder{overflow:hidden;}
 .footer-logo{
@@ -8537,7 +8552,7 @@ p.wishlist-empty{border:1px solid #e1dfd9;}
 }
 .transparant-promo{
 	margin:0 -30px;
-	background:#F47B4B;
+	background:#ff7c46;
 }
 /* hide original element */
 .jcf-hidden {
@@ -8569,8 +8584,8 @@ form#contactForm p.required{
 }
 .chk-area:hover{border-color:#858276;}
 .chk-checked{
-	background:#F47B4B;
-	border-color:#F47B4B;
+	background:#ff7c46;
+	border-color:#ff7c46;
 }
 .chk-checked:hover{border-color:#858276;}
 .chk-checked:after{
@@ -9292,7 +9307,7 @@ form#contactForm p.required{
 	.select-area.select-paging{float:right;}
 	.header-panel .form-search{
 		padding:15px;
-		background:#F47B4B;
+		background:#ff7c46;
 	}
 	.header-panel.search-active .form-search{
 		position:relative;
@@ -10161,7 +10176,7 @@ form#contactForm p.required{
 		color:#fff;
 		text-align:center;
 		position:relative;
-		background:#F47B4B;
+		background:#ff7c46;
 		text-transform:uppercase;
 		border-bottom:2px solid #626262;
         display:none;
@@ -10489,7 +10504,7 @@ form#contactForm p.required{
 		background:url(http://cdn.furnitureonline.com.au/skin/frontend/ventures/furniture/images/sprite-category.png) no-repeat -16px -48px;
 	}
 	.block-layered-nav .btn-close{display:none;}
-	#narrow-by-list .active-filter h3{background:#F47B4B;}
+	#narrow-by-list .active-filter h3{background:#ff7c46;}
 	#narrow-by-list .active-filter h3:after{
 		background:#fff;
 		height:2px;
@@ -10698,7 +10713,7 @@ form#contactForm p.required{
 	.cms-page-view .col-left.sidebar p { display: none; }
 	.cms-page-view .col-left.sidebar ul.cms-menu{ margin-left: 20px; margin-right: 20px; padding: 0px; margin-bottom:0px;}
 	.cms-page-view .col-left.sidebar ul.cms-menu li.parent > a{
-		background-color: #F47B4B;
+		background-color: #ff7c46;
 		color: white;
 		line-height: 50px;
 		height: 50px;
@@ -11176,7 +11191,7 @@ div.datepicker table tfoot tr td {
 .sociallogin-buttons.mobile .title{display:block;}
 button.bt-login-social{
 	margin:0;
-	background:#F47B4B;
+	background:#ff7c46;
 	border:none;
 	cursor:pointer;
 	display:inline-block;
@@ -11699,7 +11714,7 @@ div.solrbridge-overlay div {
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #db7858;
+	background: #ff7c46;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
